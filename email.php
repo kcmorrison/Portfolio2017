@@ -1,10 +1,9 @@
  <html>
   <head>
-    <title>Graduate Acting Ensemble</title>
+    <title>Kyle C Morrison</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.poptrox.min.js"></script>
     <script src="js/jquery.scrolly.min.js"></script>
@@ -17,7 +16,6 @@
       <link rel="stylesheet" href="css/style-wide.css" />
       <link rel="stylesheet" href="css/style-normal.css" />
     </noscript>
-    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <script type="text/javascript">
     <!--
@@ -40,10 +38,10 @@ if(isset($_POST['email'])) {
 
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
- 
+
     $email_to = "kylewd2@gmail.com";
 
-    $email_subject = "Graduate Acting Ensemble Contact Form";
+    $email_subject = "Kyle Morrison Email Form";
 
 
 
@@ -58,7 +56,7 @@ if(isset($_POST['email'])) {
 
         <?php
 
-        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+        echo "I am very sorry, but there were error(s) found with the form you submitted. ";
 
         echo "These errors appear below.<br /><br />";
 
@@ -80,7 +78,7 @@ if(isset($_POST['email'])) {
 
         !isset($_POST['message'])) {
 
-        died('We are sorry, but there appears to be a problem with the form you submitted.');
+        died('I am very sorry, but there appears to be a problem with the form you submitted.');
 
     }
 
@@ -166,7 +164,7 @@ $headers = 'From: '.$email_from."\r\n".
  <body onLoad="setTimeout('delayer()', 5000)">
 <br>
 <br>
-Thank you for contacting the UGA Graduate Acting Ensemble. We will be in touch with you soon.</center>
+Thank you for contacting me. I will be in touch with you soon.</center>
 
 
 
