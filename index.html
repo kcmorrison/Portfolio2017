@@ -20,7 +20,7 @@
 		<script src="js/init.js"></script>
 		<script src="js/jquery.colorbox-min.js"></script>
 		<script src="js/jquery.colorbox.js"></script>
-		<link rel="stylesheet" href="colorbox.css" />
+		<link rel="stylesheet" href="css/colorbox.css" />
 		<!-- Magnific Popup core CSS file -->
 		<link rel="stylesheet" href="css/magnific-popup.css">
 		<!-- Magnific Popup core JS file -->
@@ -92,7 +92,7 @@
 											<a href="https://www.youtube.com/watch?v=ZtaIJCLz020" class="popup-youtube image fit" title="Run 2 is a short film I made for my Audio/Video 2 class at University of Missouri. It was for my topic exploration activity where I wanted to explore one/long take shots and try out a GoPro. This is the improved version of using these techniques from my first video Run."><img src="images/final/pic04.jpg" alt=""></a>
 										</div>
 										<div class="4u">
-											<a href="https://devpost.com/software/stickygrams" class="open-popup-link image fit" title=""><img src="images/final/pics05.jpg" alt=""></a>
+											<a href="https://devpost.com/software/stickygrams" class="iframe image fit" title=""><img src="images/final/pics05.jpg" alt=""></a>
 										</div>
 										<div class="4u">
 											<a href="https://www.youtube.com/watch?v=u4I2dggOCwI" class="popup-youtube image fit" title=""><img src="images/final/pic06.jpg" alt=""></a>
@@ -182,36 +182,38 @@
 										  }
 
 						        });
-
-										//$('.open-popup-link').colorbox({iframe:true, width:"80%", height:"80%"});
-										//Examples of how to assign the Colorbox event to elements
-										$(".group1").colorbox({rel:'group1'});
-										$(".group2").colorbox({rel:'group2', transition:"fade"});
-										$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
-										$(".group4").colorbox({rel:'group4', slideshow:true});
-										$(".ajax").colorbox();
-										$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
-										$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
-										$(".open-popup-link").colorbox({iframe:true, width:"80%", height:"80%"});
-										$(".inline").colorbox({inline:true, width:"50%"});
-										$(".callbacks").colorbox({
-											onOpen:function(){ alert('onOpen: colorbox is about to open'); },
-											onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
-											onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
-											onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
-											onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
-										});
-
-										$('.non-retina').colorbox({rel:'group5', transition:'none'})
-										$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
-
-										//Example of preserving a JavaScript event for inline calls.
-										$("#click").click(function(){
-											$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
-											return false;
-										});
 						      });
 						    </script>
+								<script>
+												$(document).ready(function(){
+													//Examples of how to assign the Colorbox event to elements
+													$(".group1").colorbox({rel:'group1'});
+													$(".group2").colorbox({rel:'group2', transition:"fade"});
+													$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+													$(".group4").colorbox({rel:'group4', slideshow:true});
+													$(".ajax").colorbox();
+													$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+													$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+													$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+													$(".inline").colorbox({inline:true, width:"50%"});
+													$(".callbacks").colorbox({
+														onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+														onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+														onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+														onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+														onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+													});
+
+													$('.non-retina').colorbox({rel:'group5', transition:'none'})
+													$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+
+													//Example of preserving a JavaScript event for inline calls.
+													$("#click").click(function(){
+														$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+														return false;
+													});
+												});
+								</script>
 								</section>
 							</article>
 
@@ -279,7 +281,7 @@
 
 						<p><strong>If you try to open a new Colorbox while it is already open, it will update itself with the new content.</strong></p>
 						<p>Updating Content Example:<br />
-						<a class="ajax" href="../content/ajax.html">Click here to load new content</a></p>
+						<a class="ajax" href="/content/ajax.html">Click here to load new content</a></p>
 						</div>
 					</div>
 
