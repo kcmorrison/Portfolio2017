@@ -11,6 +11,25 @@
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
+a:link {
+    color: #801515;
+}
+
+/* visited link */
+a:visited {
+    color: #AA3939;
+}
+
+/* mouse over link */
+a:hover {
+    color: #550000;
+}
+
+/* selected link */
+a:active {
+    color: #FFAAAA;
+}
+
 
 	body
 	{
@@ -406,7 +425,13 @@
 
 		}
 
-
+		.your-special-css-class {
+		    max-width: 320px !important;
+		    height: 85%;
+		    margin: auto;
+		    max-height: 780px;
+		    padding: 140% 16px 0 13px !important;
+		}
 
 /*********************************************************************************/
 /* Nav                                                                           */
